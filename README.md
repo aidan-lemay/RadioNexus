@@ -21,7 +21,12 @@ Your Home for All Things HAM
 
 ### Startup Info
 
+- `npx expo start`
+
 - `cd RadioNexus`
+
 - `npm run android`
-- `npm run ios` you need to use macOS to build the iOS project - use the Expo app if you need to do iOS development without a Mac
+
+- `npm run ios`
+
 - `npm run web`
