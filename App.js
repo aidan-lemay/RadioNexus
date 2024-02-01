@@ -1,15 +1,17 @@
-//App.js
+// App.js
 
+import React from 'react';
 import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import HomeScreen from "./Screens/Home";
-import BandsScreen from "./Screens/Bands";
-import CodesScreen from "./Screens/Codes";
-import FrequenciesScreen from "./Screens/Frequencies";
-import LookupScreen from "./Screens/Lookup";
-import RepeatersScreen from "./Screens/Repeaters";
+import HamburgerMenu from "./Components/Menu";
+import HomeScreen from "./Components/Home";
+import BandsScreen from "./Components/Bands";
+import CodesScreen from "./Components/Codes";
+import FrequenciesScreen from "./Components/Frequencies";
+import LookupScreen from "./Components/Lookup";
+import RepeatersScreen from "./Components/Repeaters";
 
 const Stack = createNativeStackNavigator();
 
@@ -19,16 +21,7 @@ export default function App() {
       <Stack.Navigator
         initialRouteName="Home"
         screenOptions={{
-          headerBackTitle: "",
-          headerShown: true,
-          headerStyle: {
-            backgroundColor: 'grey',
-          },
-          headerTintColor: '#fff',
-          headerTitle: "Title",
-          headerTitleStyle: {
-            fontWeight: "bold",
-          },
+          headerLeft: () => <HamburgerMenu />, // Add the HamburgerMenu component to the headerRight
         }}>
 
         <Stack.Screen component={HomeScreen} name="Home" options={{ title: "Home" }} />
