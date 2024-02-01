@@ -21,7 +21,7 @@ export default function App() {
       <Stack.Navigator
         initialRouteName="Home"
         screenOptions={{
-          headerLeft: () => <HamburgerMenu />, // Add the HamburgerMenu component to the headerRight
+          headerLeft: () => <HamburgerMenu />,
         }}>
 
         <Stack.Screen component={HomeScreen} name="Home" options={{ title: "Home" }} />

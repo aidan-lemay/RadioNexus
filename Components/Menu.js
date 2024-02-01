@@ -29,6 +29,12 @@ const HamburgerMenu = () => {
           <TouchableOpacity onPress={() => navigateToScreen('Home')} style={styles.drawerItem}>
             <Text>Home</Text>
           </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigateToScreen('Lookup')} style={styles.drawerItem}>
+            <Text>Lookup</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigateToScreen('Repeaters')} style={styles.drawerItem}>
+            <Text>Repeaters</Text>
+          </TouchableOpacity>
           <TouchableOpacity onPress={() => navigateToScreen('Bands')} style={styles.drawerItem}>
             <Text>Bands</Text>
           </TouchableOpacity>
@@ -37,12 +43,6 @@ const HamburgerMenu = () => {
           </TouchableOpacity>
           <TouchableOpacity onPress={() => navigateToScreen('Frequencies')} style={styles.drawerItem}>
             <Text>Frequencies</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigateToScreen('Lookup')} style={styles.drawerItem}>
-            <Text>Lookup</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigateToScreen('Repeaters')} style={styles.drawerItem}>
-            <Text>Repeaters</Text>
           </TouchableOpacity>
         </View>
       )}

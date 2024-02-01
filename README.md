@@ -36,3 +36,4 @@ Your Home for All Things HAM
 ### Resources
 * https://medium.com/@shawnastaff/react-native-tutorial-1-2405d0c53143
 * https://reactnative.dev/docs/navigation
+* https://www.qrz.com/page/current_spec.html
