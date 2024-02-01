@@ -30,3 +30,9 @@ Your Home for All Things HAM
 - `npm run ios`
 
 - `npm run web`
+
+---
+
+### Resources
+* https://medium.com/@shawnastaff/react-native-tutorial-1-2405d0c53143
+* https://reactnative.dev/docs/navigation

@@ -8,7 +8,7 @@ import { styles } from "../CSS/GlobalStyles";
 
 const navigation = useNavigation();
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   return (
     <View>
       <Text style={styles.h1}>Welcome to RadioNexus</Text>
